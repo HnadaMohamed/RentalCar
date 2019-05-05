@@ -1,0 +1,37 @@
+package car.rental.car.management.service.transformer;
+
+import car.rental.car.management.entity.Car;
+import car.rental.car.management.service.dto.CarDTO;
+import car.rental.services.TransformerService;
+
+public class CarTransformer extends TransformerService<Car, CarDTO> {
+
+	@Override
+	public Car ToEntity(CarDTO d) {
+		Car car = new Car();
+
+		car.setColor(d.getColor());
+		car.setIdCar(d.getIdCar());
+		car.setMatricule(d.getMatricule());
+		car.setModel(d.getModel());
+		car.setPower(d.getPower());
+		car.setPriceDay(d.getPriceDay());
+
+		return car;
+	}
+
+	@Override
+	public CarDTO ToDTO(Car t) {
+		CarDTO car = new CarDTO();
+
+		car.setColor(t.getColor());
+		car.setIdCar(t.getIdCar());
+		car.setMatricule(t.getMatricule());
+		car.setModel(t.getModel());
+		car.setPower(t.getPower());
+		car.setPriceDay(t.getPriceDay());
+
+		return car;
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.unnamed.carrental.servicedao.impldao;
+
+import com.unnamed.carrental.entity.Insurance;
+import com.unnamed.carrental.servicedao.InsuranceService;
+
+public class InsuranceServiceImpl extends CrudServiceImpl<Insurance> implements InsuranceService {
+
+}

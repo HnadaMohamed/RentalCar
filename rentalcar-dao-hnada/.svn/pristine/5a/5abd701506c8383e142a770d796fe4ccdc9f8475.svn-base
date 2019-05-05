@@ -1,0 +1,7 @@
+package com.unnamed.carrental.servicedao;
+
+import com.unnamed.carrental.entity.Client;
+
+public interface ClientService extends CrudService<Client> {
+
+}

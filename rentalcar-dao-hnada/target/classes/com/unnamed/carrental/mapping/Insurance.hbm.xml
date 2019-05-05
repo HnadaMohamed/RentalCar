@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29 avr. 2019 21:29:39 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.unnamed.carrental.entity.Insurance" table="INSURANCE">
+        <id name="idInsurance" type="long">
+            <column name="IDINSURANCE" />
+            <generator class="assigned" />
+        </id>
+        <property name="type" type="java.lang.String">
+            <column name="TYPE" />
+        </property>
+        <property name="price" type="double">
+            <column name="PRICE" />
+        </property>
+        <property name="dateStart" type="java.util.Date">
+            <column name="DATESTART" />
+        </property>
+        <property name="state" type="boolean">
+            <column name="STATE" />
+        </property>
+        <property name="dateEnd" type="java.util.Date">
+            <column name="DATEEND" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,5 @@
+package car.rental.user.management.entity.enums;
+
+public interface testenum2 {
+
+}

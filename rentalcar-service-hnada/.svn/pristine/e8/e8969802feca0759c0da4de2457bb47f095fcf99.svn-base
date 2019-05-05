@@ -1,0 +1,29 @@
+package com.unnamed.carrental.transformer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class AbstractTransformer<E, DTO> {
+
+	public abstract E toEntity(DTO dto);
+
+	public abstract DTO toDTO(E entity);
+
+	public List<E> toEntityList(List<DTO> dtoList) {
+
+		List<E> entityList = new ArrayList<E>();
+		for (DTO dto : dtoList) {
+			entityList.add(toEntity(dto));
+		}
+		return entityList;
+	}
+
+	public List<DTO> toDTOList(List<E> entityList) {
+
+		List<DTO> dtoList = new ArrayList<DTO>();
+		for (E entity : entityList) {
+			dtoList.add(toDTO(entity));
+		}
+		return dtoList;
+	}
+}

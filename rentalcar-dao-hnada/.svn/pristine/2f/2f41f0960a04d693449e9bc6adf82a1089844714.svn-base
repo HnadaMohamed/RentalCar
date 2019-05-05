@@ -1,0 +1,5 @@
+package car.rental.car.management.entity.enums;
+
+public enum testEnum {
+
+}
