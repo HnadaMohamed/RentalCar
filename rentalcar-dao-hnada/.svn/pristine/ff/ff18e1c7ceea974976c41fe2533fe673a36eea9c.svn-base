@@ -1,8 +1,0 @@
-package com.unnamed.carrental.servicedao;
-
-import com.unnamed.carrental.entity.Insurance;
-import com.unnamed.carrental.servicedao.CrudService;
-
-public interface InsuranceService extends CrudService<Insurance> {
-
-}

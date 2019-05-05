@@ -1,8 +1,0 @@
-package com.unnamed.carrental.servicedao.impldao;
-
-import com.unnamed.carrental.entity.Client;
-import com.unnamed.carrental.servicedao.ClientService;
-
-public class ClientServiceImpl extends CrudServiceImpl<Client> implements ClientService {
-
-}
