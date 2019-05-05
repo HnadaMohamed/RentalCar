@@ -1,0 +1,27 @@
+package com.unnamed.carrental.service.impl;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.unnamed.carrental.dto.ClientDTO;
+
+import com.unnamed.carrental.service.ClientService;
+import com.unnamed.carrental.servicedao.impldao.GenericDaoImpl;
+import com.unnamed.carrental.transformer.ClientTransformer;
+
+
+public class ClientServiceImpl extends CrudServiceImpl<ClientDTO,ClientTransformer> implements ClientService {
+
+	
+	
+	ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+
+	@SuppressWarnings("unchecked")
+	public ClientServiceImpl() {
+		this.dao =  (GenericDaoImpl<ClientDTO>) context.getBean("ClientDaoImpl");
+	}
+
+	
+
+	
+}

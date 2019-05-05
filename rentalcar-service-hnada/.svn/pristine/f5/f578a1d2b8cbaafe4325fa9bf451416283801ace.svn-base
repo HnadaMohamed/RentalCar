@@ -1,0 +1,18 @@
+package car.rental.client.management.service.impl;
+
+
+
+
+import car.rental.services.impl.CrudServiceImpl;
+import car.rental.client.management.entity.Client;
+import car.rental.client.management.service.ClientService;
+
+
+public class ClientServiceImpl extends CrudServiceImpl<Client> implements ClientService {
+
+	
+
+	}
+
+
+

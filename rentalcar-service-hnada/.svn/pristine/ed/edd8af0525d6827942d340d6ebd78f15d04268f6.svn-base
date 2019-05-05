@@ -1,0 +1,40 @@
+package com.unnamed.carrental.service.impl;
+
+
+import java.util.List;
+
+import com.unnamed.carrental.servicedao.CrudService;
+import com.unnamed.carrental.service.impl.CrudServiceImpl;
+
+public class CrudServiceImpl<T> implements CrudService<T> {
+
+	private  CrudServiceImpl<T> dao;
+	
+	
+	
+	public T create(T type) {
+		dao.create(type);
+		return type;
+	}
+
+	public T update(Long id, T type) {
+		
+		dao.update(id, type);
+		return type;
+	}
+
+	public T getById(Long id) {
+		
+		return dao.getById(id);
+	}
+
+	public List<T> getAll() {
+		
+		return dao.getAll();
+	}
+
+	public void delete(Long id) {
+		
+		dao.delete(id);
+	}
+}

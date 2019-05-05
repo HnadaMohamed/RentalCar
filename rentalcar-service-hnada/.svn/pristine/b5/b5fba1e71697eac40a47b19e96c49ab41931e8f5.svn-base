@@ -1,0 +1,29 @@
+package car.rental.services;
+
+import java.util.ArrayList;
+
+import java.util.List;
+
+public abstract class TransformerService<T, D> {
+
+	public abstract T ToEntity(D d);
+
+	public abstract D ToDTO(T t);
+
+	public List<T> ToListEntity(List<D> list) {
+		List<T> t = new ArrayList<T>();
+		for (D d : list) {
+			t.add(ToEntity(d));
+		}
+		return t;
+	}
+
+	public List<D> ToListDTO(List<T> list) {
+		List<D> d = new ArrayList<D>();
+		for (T t : list) {
+			d.add(ToDTO(t));
+		}
+		return d;
+	}
+
+}

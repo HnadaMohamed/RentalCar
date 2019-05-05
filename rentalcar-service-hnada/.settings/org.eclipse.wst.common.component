@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="rentalcar-service-hnada">
+        <wb-resource deploy-path="/" source-path="/src/main/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <property name="context-root" value="rentalcar-service-hnada"/>
+        <property name="java-output-path" value="/rentalcar-service-hnada/bin"/>
+    </wb-module>
+</project-modules>
